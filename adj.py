@@ -13,7 +13,7 @@ def displayFailureCase():
 	Button(screen2, text = "OK", command = delete2, font = small_font).pack()
 
 def delete2():
-    screen2.destroy()
+	screen2.destroy()
 
 
 def displayFailureArticle():
@@ -27,7 +27,7 @@ def displayFailureArticle():
 	Button(screen3, text = "OK", command = delete3, font = small_font).pack()
 
 def delete3():
-    screen3.destroy()
+	screen3.destroy()
 
 
 def displayFailureSubstantive():
@@ -41,7 +41,7 @@ def displayFailureSubstantive():
 	Button(screen4, text = "OK", command = delete4, font = small_font).pack()
 
 def delete4():
-    screen4.destroy()
+	screen4.destroy()
 
 
 def display(t):
@@ -55,7 +55,7 @@ def display(t):
 	Button(screen5, text = "OK", command = delete5, font = small_font).pack()
 
 def delete5():
-    screen5.destroy()
+	screen5.destroy()
 
 
 def determineTermination():
@@ -213,48 +213,48 @@ def determineTermination():
 
 
 def main_screen():
-    global screen
-    screen = Tk()
-    screen.geometry("800x400")
-    screen.title("Adjective Termination")
+	global screen
+	screen = Tk()
+	screen.geometry("800x400")
+	screen.title("Adjective Termination")
 
-    global small_font
-    small_font = ('Verdana',10)
-    large_font = ("Verdana", 100)
+	global small_font
+	small_font = ('Verdana',10)
+	large_font = ("Verdana", 100)
 
-    global articleEntry
-    global substantiveEntry
-    global caseEntry
+	global articleEntry
+	global substantiveEntry
+	global caseEntry
 
-    global articleVerify
-    articleVerify = StringVar()
-    Label(text = "").pack()
-    Label(text = "").pack()
-    Label(font=("Courier", 15), text = "Article type (Definite, Indefinite, No Article)").pack()
-    articleEntry = Entry(textvariable = articleVerify, width = "55", font = "large_font")
-    articleEntry.pack()
+	global articleVerify
+	articleVerify = StringVar()
+	Label(text = "").pack()
+	Label(text = "").pack()
+	Label(font=("Courier", 15), text = "Article type (Definite, Indefinite, No Article)").pack()
+	articleEntry = Entry(textvariable = articleVerify, width = "55", font = "large_font")
+	articleEntry.pack()
 
-    global substantiveVerify
-    substantiveVerify = StringVar()
-    Label(text = "").pack()
-    Label(text = "").pack()
-    Label(font=("Courier", 15), text = "Substantive type (Masculine, Feminine, Neuter, Plural)").pack()
-    substantiveEntry = Entry(textvariable = substantiveVerify, width = "55", font = "large_font")
-    substantiveEntry.pack()
+	global substantiveVerify
+	substantiveVerify = StringVar()
+	Label(text = "").pack()
+	Label(text = "").pack()
+	Label(font=("Courier", 15), text = "Substantive type (Masculine, Feminine, Neuter, Plural)").pack()
+	substantiveEntry = Entry(textvariable = substantiveVerify, width = "55", font = "large_font")
+	substantiveEntry.pack()
 
-    global caseVerify
-    caseVerify = StringVar()
-    Label(text = "").pack()
-    Label(text = "").pack()
-    Label(font=("Courier", 15), text = "Case type (Nominative, Accusative, Dative, Genitive)").pack()
-    caseEntry = Entry(textvariable = caseVerify, width = "55", font = "large_font")
-    caseEntry.pack()
+	global caseVerify
+	caseVerify = StringVar()
+	Label(text = "").pack()
+	Label(text = "").pack()
+	Label(font=("Courier", 15), text = "Case type (Nominative, Accusative, Dative, Genitive)").pack()
+	caseEntry = Entry(textvariable = caseVerify, width = "55", font = "large_font")
+	caseEntry.pack()
 
-    Label(text = "").pack()
-    Label(text = "").pack()
-    Button(text = "Determine Termination", width = "30", height = "1", font = small_font, command = determineTermination).pack()
+	Label(text = "").pack()
+	Label(text = "").pack()
+	Button(text = "Determine Termination", width = "30", height = "1", font = small_font, command = determineTermination).pack()
 
-    screen.mainloop()
+	screen.mainloop()
 
 
 main_screen()
